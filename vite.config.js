@@ -8,4 +8,11 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
+  theme: {
+    extend: {
+      fontFamily: {
+        spaceGrotesk : ['Space Grotesk', 'sans-serif'], 
+      },
+    },
+  },
 })
