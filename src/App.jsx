@@ -6,6 +6,8 @@ import Home from './components/Home'
 import About from './components/About'
 import Header from './components/Header'
 import Services from './components/Services'
+import Contact from './components/Contact'
+import { ToastContainer } from "react-toastify";
 
 
 function App() {
@@ -58,11 +60,13 @@ function App() {
       </div>
 
       <Header />
+      <ToastContainer position="top-center" autoClose={2000} />
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
+        <Route path='/contact' element={<Contact/>}/>
       </Routes>
     </>
   )
